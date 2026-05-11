@@ -22,6 +22,8 @@ jobs:
           python-version: '3.10'
 
       - name: Collect COMTRADE data
+        env:
+          COMTRADE_KEY: ${{ secrets.COMTRADE_KEY }}
         run: python3 comtrade/fetch_comtrade.py
         continue-on-error: true
 

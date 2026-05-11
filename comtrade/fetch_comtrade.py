@@ -9,7 +9,10 @@ from datetime import datetime, timedelta
 from pathlib import Path
 import urllib.request, urllib.error
 
-# UN COMTRADE API (免费，无需 key)
+# UN COMTRADE API
+# 免费注册: https://comtradeplus.un.org/subscriptions
+# 注册后在 GitHub repo Settings → Secrets 添加 COMTRADE_KEY
+API_KEY = os.environ.get("COMTRADE_KEY", "")
 API_BASE = "https://comtradeapi.un.org/data/v1/get/C/M/HS"
 
 # 中国 reporter code
@@ -49,8 +52,12 @@ DATA_DIR = Path(__file__).parent.parent / "data" / "comtrade"
 
 def fetch_comtrade(reporter, partner, period, cmd_codes):
     """调用 COMTRADE API 获取贸易数据"""
+    if not API_KEY:
+        print("  ❌ 未设置 COMTRADE_KEY，请先注册: https://comtradeplus.un.org/subscriptions")
+        return []
+
     cmd = ",".join(cmd_codes)
-    url = f"{API_BASE}?reporterCode={reporter}&partnerCode={partner}&period={period}&cmdCode={cmd}&flowCode=M"
+    url = f"{API_BASE}?reporterCode={reporter}&partnerCode={partner}&period={period}&cmdCode={cmd}&flowCode=M&subscriptioncode={API_KEY}"
 
     req = urllib.request.Request(url, headers={"User-Agent": "open-signals/1.0"})
     try:

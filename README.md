@@ -23,11 +23,21 @@
 
 ## 使用方式
 
+### 1. 注册 COMTRADE API Key（免费）
+
+访问 https://comtradeplus.un.org/subscriptions 注册，获取 subscription code。
+
+### 2. 配置 Secret
+
+GitHub repo → Settings → Secrets → 添加 `COMTRADE_KEY`
+
+### 3. 运行
+
 ```bash
 # 采集中国粮食进口数据
-python3 comtrade/fetch_comtrade.py
+COMTRADE_KEY=你的key python3 comtrade/fetch_comtrade.py
 
-# 采集货运航班数据
+# 采集货运航班数据（无需 key）
 python3 opensky/fetch_opensky.py
 ```
 
