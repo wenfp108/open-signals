@@ -29,3 +29,13 @@ jobs:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: python3 opensky/fetch_opensky.py
         continue-on-error: true
+
+      - name: Keep alive
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          echo "last_run: $(date -u +%Y-%m-%dT%H:%M:%SZ)" > .last_run
+          git add .last_run
+          git commit -m "chore: keep alive [skip ci]" || echo "No changes"
+          git pull --rebase
+          git push
