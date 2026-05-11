@@ -122,7 +122,7 @@ def run():
         print("❌ 未设置 GH_PAT")
         sys.exit(1)
 
-    months = get_recent_months(12)
+    months = get_recent_months(24)
     cmd_codes = list(COMMODITIES.keys())
     all_results = {}
     found_count = 0
