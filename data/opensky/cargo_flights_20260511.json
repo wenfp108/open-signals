@@ -1,0 +1,88 @@
+{
+  "date": "20260511",
+  "timestamp": "2026-05-11T17:19:33.804134",
+  "routes": {
+    "中东→中国": {
+      "total_flights": 25,
+      "cargo_flights": 3,
+      "desc": "波斯湾/中东出发，能源/商品相关"
+    },
+    "巴西→中国": {
+      "total_flights": 135,
+      "cargo_flights": 0,
+      "desc": "巴西出发，大豆/铁矿相关"
+    },
+    "美国→中国": {
+      "total_flights": 7566,
+      "cargo_flights": 97,
+      "desc": "美国出发，农产品/科技相关"
+    },
+    "澳大利亚→中国": {
+      "total_flights": 33,
+      "cargo_flights": 1,
+      "desc": "澳大利亚出发，铁矿/煤炭相关"
+    }
+  },
+  "airports": {
+    "PVG": {
+      "name": "上海浦东",
+      "country": "CN",
+      "total_flights": 0,
+      "cargo_flights": 0
+    },
+    "HKG": {
+      "name": "香港",
+      "country": "HK",
+      "total_flights": 26,
+      "cargo_flights": 12
+    },
+    "ICN": {
+      "name": "首尔仁川",
+      "country": "KR",
+      "total_flights": 3,
+      "cargo_flights": 0
+    },
+    "NRT": {
+      "name": "东京成田",
+      "country": "JP",
+      "total_flights": 0,
+      "cargo_flights": 0
+    },
+    "MEM": {
+      "name": "孟菲斯(FedEx)",
+      "country": "US",
+      "total_flights": 13,
+      "cargo_flights": 0
+    },
+    "SDF": {
+      "name": "路易斯维尔(UPS)",
+      "country": "US",
+      "total_flights": 22,
+      "cargo_flights": 0
+    },
+    "DXB": {
+      "name": "迪拜",
+      "country": "AE",
+      "total_flights": 0,
+      "cargo_flights": 0
+    },
+    "FRA": {
+      "name": "法兰克福",
+      "country": "DE",
+      "total_flights": 34,
+      "cargo_flights": 1
+    },
+    "LHR": {
+      "name": "伦敦希思罗",
+      "country": "GB",
+      "total_flights": 57,
+      "cargo_flights": 1
+    },
+    "ANC": {
+      "name": "安克雷奇",
+      "country": "US",
+      "total_flights": 17,
+      "cargo_flights": 1
+    }
+  }
+}
