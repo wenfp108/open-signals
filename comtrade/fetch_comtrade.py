@@ -122,22 +122,38 @@ def run():
         print("❌ 未设置 GH_PAT")
         sys.exit(1)
 
-    months = get_recent_months(30)
+    months = get_recent_months(12)
     cmd_codes = list(COMMODITIES.keys())
     all_results = {}
-    empty_streak = 0
     found_count = 0
 
+    # 第一步：只查"世界"找有数据的月份（快速扫描）
+    print("🔍 扫描有数据的月份...")
+    valid_months = []
     for period in months:
-        print(f"\n📅 采集 {period} 数据...")
+        time.sleep(2)
+        records = fetch_comtrade(CHINA, 0, period, cmd_codes)
+        if records:
+            valid_months.append(period)
+            print(f"  ✅ {period}: {len(records)} 条")
+            if len(valid_months) >= 3:
+                break
+        else:
+            print(f"  ⏭️ {period}: 无数据")
+
+    if not valid_months:
+        print("\n❌ 未找到有数据的月份")
+        return
+
+    # 第二步：对有数据的月份，查询所有贸易伙伴
+    print(f"\n📊 采集 {len(valid_months)} 个月的详细数据...")
+    for period in valid_months:
+        print(f"\n📅 {period}:")
         period_data = {}
 
         for partner_code, partner_name in PARTNERS.items():
-            time.sleep(1.5)
+            time.sleep(2)
             records = fetch_comtrade(CHINA, partner_code, period, cmd_codes)
-
-            if not records:
-                continue
 
             for r in records:
                 cmd = r.get("cmdCode", "")
@@ -146,7 +162,6 @@ def run():
 
                 info = COMMODITIES[cmd]
                 key = f"{partner_code}_{cmd}"
-
                 period_data[key] = {
                     "period": period,
                     "commodity": info["name"],
@@ -160,12 +175,11 @@ def run():
                     "quantity": r.get("qty") or 0,
                 }
 
-            print(f"  ✅ {partner_name}: {len(records)} 条记录")
+            if records:
+                print(f"  ✅ {partner_name}: {len(records)} 条")
 
         if period_data:
-            # 推送到 Central-Bank
             y, m = period[:4], period[4:6]
-            # 用最后一天作为日期（月度数据）
             last_day = (datetime(int(y), int(m) % 12 + 1, 1) - timedelta(days=1)).strftime("%d")
             path = f"data/comtrade/{y}/{m}/{last_day}/{period}.json"
             msg = f"📊 COMTRADE: {period} 中国进口数据"
@@ -173,12 +187,6 @@ def run():
                 print(f"  💾 已推送: Central-Bank/{path}")
                 found_count += 1
             all_results[period] = period_data
-            empty_streak = 0
-        else:
-            empty_streak += 1
-            if empty_streak >= 18:
-                print("\n⚠️ 连续 18 个月无数据，停止采集")
-                break
 
     # 生成摘要
     if all_results:
