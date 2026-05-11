@@ -5,9 +5,6 @@ on:
     - cron: '0 6 * * *'   # UTC 06:00 = 北京时间 14:00
   workflow_dispatch:
 
-permissions:
-  contents: write
-
 jobs:
   collect:
     runs-on: ubuntu-latest
@@ -23,23 +20,12 @@ jobs:
 
       - name: Collect COMTRADE data
         env:
-          COMTRADE_KEY: ${{ secrets.COMTRADE_KEY }}
+          GH_PAT: ${{ secrets.GH_PAT }}
         run: python3 comtrade/fetch_comtrade.py
         continue-on-error: true
 
       - name: Collect OpenSky data
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
         run: python3 opensky/fetch_opensky.py
         continue-on-error: true
-
-      - name: Commit and push
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/
-          if git diff --cached --quiet; then
-            echo "📋 无新数据"
-          else
-            git commit -m "📡 data: $(date +%Y-%m-%d)"
-            git pull --rebase
-            git push
-          fi
