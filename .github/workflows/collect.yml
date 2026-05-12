@@ -24,12 +24,14 @@ jobs:
       - name: Collect COMTRADE data
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
         run: python3 comtrade/fetch_comtrade.py
         continue-on-error: true
 
       - name: Collect OpenSky data
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
         run: python3 opensky/fetch_opensky.py
         continue-on-error: true
 
