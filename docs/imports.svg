@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="360" viewBox="0 0 880 360" role="img">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="28" y="42" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Noto Sans SC, sans-serif" font-size="19" fill="#14161c" font-weight="650" text-anchor="start" opacity="1">中国大宗商品进口额</text>
+<text x="28" y="64" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Noto Sans SC, sans-serif" font-size="12" fill="#747b8a" font-weight="400" text-anchor="start" opacity="1">UN COMTRADE · 2024-01 → 2024-12 · 月度 · 世界合计</text>
+<line x1="60" y1="314.0" x2="852" y2="314.0" stroke="#e7e8ee" stroke-width="1"/>
+<text x="50" y="318.0" font-family="ui-monospace, SF Mono, Menlo, monospace" font-size="10" fill="#747b8a" font-weight="400" text-anchor="end" opacity="1">0.0B</text>
+<line x1="60" y1="260.5" x2="852" y2="260.5" stroke="#e7e8ee" stroke-width="1"/>
+<text x="50" y="264.5" font-family="ui-monospace, SF Mono, Menlo, monospace" font-size="10" fill="#747b8a" font-weight="400" text-anchor="end" opacity="1">7.5B</text>
+<line x1="60" y1="207.0" x2="852" y2="207.0" stroke="#e7e8ee" stroke-width="1"/>
+<text x="50" y="211.0" font-family="ui-monospace, SF Mono, Menlo, monospace" font-size="10" fill="#747b8a" font-weight="400" text-anchor="end" opacity="1">15.0B</text>
+<line x1="60" y1="153.5" x2="852" y2="153.5" stroke="#e7e8ee" stroke-width="1"/>
+<text x="50" y="157.5" font-family="ui-monospace, SF Mono, Menlo, monospace" font-size="10" fill="#747b8a" font-weight="400" text-anchor="end" opacity="1">22.5B</text>
+<line x1="60" y1="100.0" x2="852" y2="100.0" stroke="#e7e8ee" stroke-width="1"/>
+<text x="50" y="104.0" font-family="ui-monospace, SF Mono, Menlo, monospace" font-size="10" fill="#747b8a" font-weight="400" text-anchor="end" opacity="1">30.0B</text>
+<text x="60.0" y="336" font-family="ui-monospace, SF Mono, Menlo, monospace" font-size="10" fill="#747b8a" font-weight="400" text-anchor="middle" opacity="1">2024-01</text>
+<text x="132.0" y="336" font-family="ui-monospace, SF Mono, Menlo, monospace" font-size="10" fill="#747b8a" font-weight="400" text-anchor="middle" opacity="1">2024-02</text>
+<text x="204.0" y="336" font-family="ui-monospace, SF Mono, Menlo, monospace" font-size="10" fill="#747b8a" font-weight="400" text-anchor="middle" opacity="1">2024-03</text>
+<text x="276.0" y="336" font-family="ui-monospace, SF Mono, Menlo, monospace" font-size="10" fill="#747b8a" font-weight="400" text-anchor="middle" opacity="1">2024-04</text>
+<text x="348.0" y="336" font-family="ui-monospace, SF Mono, Menlo, monospace" font-size="10" fill="#747b8a" font-weight="400" text-anchor="middle" opacity="1">2024-05</text>
+<text x="420.0" y="336" font-family="ui-monospace, SF Mono, Menlo, monospace" font-size="10" fill="#747b8a" font-weight="400" text-anchor="middle" opacity="1">2024-06</text>
+<text x="492.0" y="336" font-family="ui-monospace, SF Mono, Menlo, monospace" font-size="10" fill="#747b8a" font-weight="400" text-anchor="middle" opacity="1">2024-07</text>
+<text x="564.0" y="336" font-family="ui-monospace, SF Mono, Menlo, monospace" font-size="10" fill="#747b8a" font-weight="400" text-anchor="middle" opacity="1">2024-08</text>
+<text x="636.0" y="336" font-family="ui-monospace, SF Mono, Menlo, monospace" font-size="10" fill="#747b8a" font-weight="400" text-anchor="middle" opacity="1">2024-09</text>
+<text x="708.0" y="336" font-family="ui-monospace, SF Mono, Menlo, monospace" font-size="10" fill="#747b8a" font-weight="400" text-anchor="middle" opacity="1">2024-10</text>
+<text x="780.0" y="336" font-family="ui-monospace, SF Mono, Menlo, monospace" font-size="10" fill="#747b8a" font-weight="400" text-anchor="middle" opacity="1">2024-11</text>
+<text x="852.0" y="336" font-family="ui-monospace, SF Mono, Menlo, monospace" font-size="10" fill="#747b8a" font-weight="400" text-anchor="middle" opacity="1">2024-12</text>
+<polyline points="60.0,129.4 132.0,128.0 204.0,102.5 276.0,114.1 348.0,101.8 420.0,110.9 492.0,130.2 564.0,104.5 636.0,130.2 708.0,140.3 780.0,125.6 852.0,130.8" fill="none" stroke="#4f46e5" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" opacity="0.95"/>
+<circle cx="60.0" cy="129.4" r="3" fill="#fff" stroke="#4f46e5" stroke-width="2"/>
+<circle cx="132.0" cy="128.0" r="3" fill="#fff" stroke="#4f46e5" stroke-width="2"/>
+<circle cx="204.0" cy="102.5" r="3" fill="#fff" stroke="#4f46e5" stroke-width="2"/>
+<circle cx="276.0" cy="114.1" r="3" fill="#fff" stroke="#4f46e5" stroke-width="2"/>
+<circle cx="348.0" cy="101.8" r="3" fill="#fff" stroke="#4f46e5" stroke-width="2"/>
+<circle cx="420.0" cy="110.9" r="3" fill="#fff" stroke="#4f46e5" stroke-width="2"/>
+<circle cx="492.0" cy="130.2" r="3" fill="#fff" stroke="#4f46e5" stroke-width="2"/>
+<circle cx="564.0" cy="104.5" r="3" fill="#fff" stroke="#4f46e5" stroke-width="2"/>
+<circle cx="636.0" cy="130.2" r="3" fill="#fff" stroke="#4f46e5" stroke-width="2"/>
+<circle cx="708.0" cy="140.3" r="3" fill="#fff" stroke="#4f46e5" stroke-width="2"/>
+<circle cx="780.0" cy="125.6" r="3" fill="#fff" stroke="#4f46e5" stroke-width="2"/>
+<circle cx="852.0" cy="130.8" r="3" fill="#fff" stroke="#4f46e5" stroke-width="2"/>
+<polyline points="60.0,209.3 132.0,224.8 204.0,229.9 276.0,235.4 348.0,235.2 420.0,240.2 492.0,239.2 564.0,242.5 636.0,244.8 708.0,244.1 780.0,242.9 852.0,235.1" fill="none" stroke="#e8890c" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" opacity="0.95"/>
+<circle cx="60.0" cy="209.3" r="3" fill="#fff" stroke="#e8890c" stroke-width="2"/>
+<circle cx="132.0" cy="224.8" r="3" fill="#fff" stroke="#e8890c" stroke-width="2"/>
+<circle cx="204.0" cy="229.9" r="3" fill="#fff" stroke="#e8890c" stroke-width="2"/>
+<circle cx="276.0" cy="235.4" r="3" fill="#fff" stroke="#e8890c" stroke-width="2"/>
+<circle cx="348.0" cy="235.2" r="3" fill="#fff" stroke="#e8890c" stroke-width="2"/>
+<circle cx="420.0" cy="240.2" r="3" fill="#fff" stroke="#e8890c" stroke-width="2"/>
+<circle cx="492.0" cy="239.2" r="3" fill="#fff" stroke="#e8890c" stroke-width="2"/>
+<circle cx="564.0" cy="242.5" r="3" fill="#fff" stroke="#e8890c" stroke-width="2"/>
+<circle cx="636.0" cy="244.8" r="3" fill="#fff" stroke="#e8890c" stroke-width="2"/>
+<circle cx="708.0" cy="244.1" r="3" fill="#fff" stroke="#e8890c" stroke-width="2"/>
+<circle cx="780.0" cy="242.9" r="3" fill="#fff" stroke="#e8890c" stroke-width="2"/>
+<circle cx="852.0" cy="235.1" r="3" fill="#fff" stroke="#e8890c" stroke-width="2"/>
+<polyline points="60.0,259.0 132.0,266.7 204.0,262.8 276.0,266.0 348.0,260.9 420.0,263.2 492.0,261.0 564.0,258.9 636.0,256.4 708.0,261.8 780.0,265.6 852.0,257.5" fill="none" stroke="#0e9f6e" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" opacity="0.95"/>
+<circle cx="60.0" cy="259.0" r="3" fill="#fff" stroke="#0e9f6e" stroke-width="2"/>
+<circle cx="132.0" cy="266.7" r="3" fill="#fff" stroke="#0e9f6e" stroke-width="2"/>
+<circle cx="204.0" cy="262.8" r="3" fill="#fff" stroke="#0e9f6e" stroke-width="2"/>
+<circle cx="276.0" cy="266.0" r="3" fill="#fff" stroke="#0e9f6e" stroke-width="2"/>
+<circle cx="348.0" cy="260.9" r="3" fill="#fff" stroke="#0e9f6e" stroke-width="2"/>
+<circle cx="420.0" cy="263.2" r="3" fill="#fff" stroke="#0e9f6e" stroke-width="2"/>
+<circle cx="492.0" cy="261.0" r="3" fill="#fff" stroke="#0e9f6e" stroke-width="2"/>
+<circle cx="564.0" cy="258.9" r="3" fill="#fff" stroke="#0e9f6e" stroke-width="2"/>
+<circle cx="636.0" cy="256.4" r="3" fill="#fff" stroke="#0e9f6e" stroke-width="2"/>
+<circle cx="708.0" cy="261.8" r="3" fill="#fff" stroke="#0e9f6e" stroke-width="2"/>
+<circle cx="780.0" cy="265.6" r="3" fill="#fff" stroke="#0e9f6e" stroke-width="2"/>
+<circle cx="852.0" cy="257.5" r="3" fill="#fff" stroke="#0e9f6e" stroke-width="2"/>
+<polyline points="60.0,281.7 132.0,293.6 204.0,292.6 276.0,282.8 348.0,278.5 420.0,275.4 492.0,279.7 564.0,271.5 636.0,273.6 708.0,286.1 780.0,288.9 852.0,287.6" fill="none" stroke="#0ea5e9" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" opacity="0.95"/>
+<circle cx="60.0" cy="281.7" r="3" fill="#fff" stroke="#0ea5e9" stroke-width="2"/>
+<circle cx="132.0" cy="293.6" r="3" fill="#fff" stroke="#0ea5e9" stroke-width="2"/>
+<circle cx="204.0" cy="292.6" r="3" fill="#fff" stroke="#0ea5e9" stroke-width="2"/>
+<circle cx="276.0" cy="282.8" r="3" fill="#fff" stroke="#0ea5e9" stroke-width="2"/>
+<circle cx="348.0" cy="278.5" r="3" fill="#fff" stroke="#0ea5e9" stroke-width="2"/>
+<circle cx="420.0" cy="275.4" r="3" fill="#fff" stroke="#0ea5e9" stroke-width="2"/>
+<circle cx="492.0" cy="279.7" r="3" fill="#fff" stroke="#0ea5e9" stroke-width="2"/>
+<circle cx="564.0" cy="271.5" r="3" fill="#fff" stroke="#0ea5e9" stroke-width="2"/>
+<circle cx="636.0" cy="273.6" r="3" fill="#fff" stroke="#0ea5e9" stroke-width="2"/>
+<circle cx="708.0" cy="286.1" r="3" fill="#fff" stroke="#0ea5e9" stroke-width="2"/>
+<circle cx="780.0" cy="288.9" r="3" fill="#fff" stroke="#0ea5e9" stroke-width="2"/>
+<circle cx="852.0" cy="287.6" r="3" fill="#fff" stroke="#0ea5e9" stroke-width="2"/>
+<circle cx="65" cy="84" r="4.5" fill="#4f46e5"/>
+<text x="75" y="88" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Noto Sans SC, sans-serif" font-size="12" fill="#14161c" font-weight="500" text-anchor="start" opacity="1">原油</text>
+<circle cx="124" cy="84" r="4.5" fill="#e8890c"/>
+<text x="134" y="88" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Noto Sans SC, sans-serif" font-size="12" fill="#14161c" font-weight="500" text-anchor="start" opacity="1">铁矿石</text>
+<circle cx="196" cy="84" r="4.5" fill="#0e9f6e"/>
+<text x="206" y="88" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Noto Sans SC, sans-serif" font-size="12" fill="#14161c" font-weight="500" text-anchor="start" opacity="1">天然气</text>
+<circle cx="268" cy="84" r="4.5" fill="#0ea5e9"/>
+<text x="278" y="88" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Noto Sans SC, sans-serif" font-size="12" fill="#14161c" font-weight="500" text-anchor="start" opacity="1">大豆</text>
+</svg>

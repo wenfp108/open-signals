@@ -18,6 +18,10 @@ API_BASE = "https://comtradeapi.un.org/public/v1/preview/C/M/HS"
 GITHUB_TOKEN = os.environ.get("GH_PAT", "")
 REPO = "wenfp108/Central-Bank"
 
+# --local: 只写入本仓库 data/，不推送 Central-Bank（无需 GH_PAT）
+LOCAL = "--local" in sys.argv
+ROOT = Path(__file__).resolve().parent.parent
+
 # 中国 reporter code
 CHINA = 156
 
@@ -60,8 +64,15 @@ def gh_api(method, path, data=None):
 
 
 def push_to_bank(path, content, message):
-    """推送到 Central-Bank"""
+    """推送到 Central-Bank；--local 时写入本仓库 data/"""
     json_str = json.dumps(content, ensure_ascii=False, indent=2)
+
+    if LOCAL:
+        out = ROOT / path
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(json_str + "\n", encoding="utf-8")
+        print(f"    💾 本地: {path}")
+        return True
 
     # 检查是否已存在
     existing, _ = gh_api("GET", path)
@@ -118,8 +129,8 @@ def get_recent_months(n=30):
 
 
 def run():
-    if not GITHUB_TOKEN:
-        print("❌ 未设置 GH_PAT")
+    if not LOCAL and not GITHUB_TOKEN:
+        print("❌ 未设置 GH_PAT（或加 --local 只写本地）")
         sys.exit(1)
 
     months = get_recent_months(24)

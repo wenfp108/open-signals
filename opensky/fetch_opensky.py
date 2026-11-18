@@ -18,6 +18,10 @@ API_BASE = "https://opensky-network.org/api"
 GITHUB_TOKEN = os.environ.get("GH_PAT", "")
 REPO = "wenfp108/Central-Bank"
 
+# --local: 只写入本仓库 data/，不推送 Central-Bank（无需 GH_PAT）
+LOCAL = "--local" in sys.argv
+ROOT = Path(__file__).resolve().parent.parent
+
 # 关键货运航线区域（bbox: lat1, lon1, lat2, lon2）
 CARGO_ROUTES = {
     "中东→中国": {
@@ -123,8 +127,8 @@ def is_cargo_flight(state):
 
 
 def run():
-    if not GITHUB_TOKEN:
-        print("❌ 未设置 GH_PAT")
+    if not LOCAL and not GITHUB_TOKEN:
+        print("❌ 未设置 GH_PAT（或加 --local 只写本地）")
         sys.exit(1)
 
     today = datetime.now().strftime("%Y%m%d")
@@ -173,15 +177,21 @@ def run():
         }
         print(f"    {info['name']:12} ({icao}): 总 {total}, 货机 {cargo}")
 
-    # 推送到 Central-Bank
+    # 推送到 Central-Bank（--local 时改为写入本仓库）
     y = today[:4]
     m = today[4:6]
     d = today[6:8]
     path = f"data/opensky/{y}/{m}/{d}/{today}.json"
-    msg = f"✈️ OpenSky: {today} 货运航班数据"
 
-    if push_to_bank(path, results, msg):
-        print(f"\n💾 已推送: Central-Bank/{path}")
+    if LOCAL:
+        local_path = ROOT / path
+        local_path.parent.mkdir(parents=True, exist_ok=True)
+        local_path.write_text(json.dumps(results, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        print(f"\n💾 已写入本地: {path}")
+    else:
+        msg = f"✈️ OpenSky: {today} 货运航班数据"
+        if push_to_bank(path, results, msg):
+            print(f"\n💾 已推送: Central-Bank/{path}")
 
     print_summary(results)
 

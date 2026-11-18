@@ -1,0 +1,98 @@
+{
+  "0_1001": {
+    "period": "202406",
+    "commodity": "小麦",
+    "commodity_en": "Wheat",
+    "hs_code": "1001",
+    "sector": "粮食",
+    "partner": "世界",
+    "partner_code": "0",
+    "import_value_usd": 367076442.0,
+    "net_weight_kg": 1177280603.416,
+    "quantity": 1177280603.416
+  },
+  "0_1005": {
+    "period": "202406",
+    "commodity": "玉米",
+    "commodity_en": "Corn/Maize",
+    "hs_code": "1005",
+    "sector": "粮食",
+    "partner": "世界",
+    "partner_code": "0",
+    "import_value_usd": 220466208.0,
+    "net_weight_kg": 906516072.0,
+    "quantity": 906516072.0
+  },
+  "0_1006": {
+    "period": "202406",
+    "commodity": "稻米",
+    "commodity_en": "Rice",
+    "hs_code": "1006",
+    "sector": "粮食",
+    "partner": "世界",
+    "partner_code": "0",
+    "import_value_usd": 43291606.0,
+    "net_weight_kg": 79552716.419,
+    "quantity": 79552716.419
+  },
+  "0_1201": {
+    "period": "202406",
+    "commodity": "大豆",
+    "commodity_en": "Soybeans",
+    "hs_code": "1201",
+    "sector": "粮食",
+    "partner": "世界",
+    "partner_code": "0",
+    "import_value_usd": 5409600440.0,
+    "net_weight_kg": 11112673169.0,
+    "quantity": 11112673169.0
+  },
+  "0_2601": {
+    "period": "202406",
+    "commodity": "铁矿石",
+    "commodity_en": "Iron Ore",
+    "hs_code": "2601",
+    "sector": "矿产",
+    "partner": "世界",
+    "partner_code": "0",
+    "import_value_usd": 10344986701.0,
+    "net_weight_kg": 0,
+    "quantity": 0
+  },
+  "0_2701": {
+    "period": "202406",
+    "commodity": "煤炭",
+    "commodity_en": "Coal",
+    "hs_code": "2701",
+    "sector": "能源",
+    "partner": "世界",
+    "partner_code": "0",
+    "import_value_usd": 3461822316.0,
+    "net_weight_kg": 30558769114.0,
+    "quantity": 30558769114.0
+  },
+  "0_2709": {
+    "period": "202406",
+    "commodity": "原油",
+    "commodity_en": "Crude Petroleum",
+    "hs_code": "2709",
+    "sector": "能源",
+    "partner": "世界",
+    "partner_code": "0",
+    "import_value_usd": 28468749575.0,
+    "net_weight_kg": 46448317659.0,
+    "quantity": 46448317659.0
+  },
+  "0_2711": {
+    "period": "202406",
+    "commodity": "天然气",
+    "commodity_en": "Petroleum Gas/LNG",
+    "hs_code": "2711",
+    "sector": "能源",
+    "partner": "世界",
+    "partner_code": "0",
+    "import_value_usd": 7119990228.0,
+    "net_weight_kg": 0,
+    "quantity": 0
+  }
+}
